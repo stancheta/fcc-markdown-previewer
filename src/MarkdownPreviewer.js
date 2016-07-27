@@ -1,14 +1,17 @@
 import React from 'react';
 import './MarkdownPreviewer.sass';
+import marked from 'marked';
 
 var MarkdownPreviewer = React.createClass({
   getInitialState: function() {
-    return {value: 'Hello World'};
+    return {value: '## Hello World'};
   },
   handleText: function() {
     this.setState({value: this.refs.textarea.value});
   },
-  setValue: function() {
+  previewMarkdown: function() {
+    var rawMarkdown = marked(this.state.value, {sanitize: true});
+    return { __html: rawMarkdown };
 
   },
   render: function() {
@@ -20,7 +23,8 @@ var MarkdownPreviewer = React.createClass({
           defaultValue={this.state.value}></textarea>
         <div
           className="previewer"
-          >{this.state.value}
+          dangerouslySetInnerHTML={this.previewMarkdown()}
+        >
         </div>
       </div>
     );

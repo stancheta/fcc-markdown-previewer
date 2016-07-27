@@ -5,11 +5,21 @@ textarea
   border: 1px solid #cccccc
   font-family: Tahoma, sans-serif
   resize: vertical
-  height: 40em
-  width: 30em
+  height: 35em
+  max-width: 30em
+  min-width: 15em
+  width: 90%
 
 .previewer
   display: inline-block
+  font-family: 'Helvetica' Arial sans-serif
   min-height: 30em
   vertical-align: top
   margin-left: 2em
+
+@media (max-width: 768px)
+  .MarkdownPreviewer
+    margin: 0 5%
+
+  textarea
+    height: 20em

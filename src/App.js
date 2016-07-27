@@ -10,7 +10,7 @@ var App = React.createClass({
         <div className="App-header">
           <h2><a href="https://www.freecodecamp.com">FreeCodeCamp</a></h2>
         </div>
-        <h1>Markdown Previewer</h1>
+        <h1 className="App-title">Markdown Previewer</h1>
         <div className="App-body">
           <MarkdownPreviewer />
         </div>
