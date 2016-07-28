@@ -1,14 +1,16 @@
 .MarkdownPreviewer
-  margin-left: 15%
+  margin: 2.5%
 
 textarea
-  border: 1px solid #cccccc
+  background-color: #222
+  border-radius: 5px
+  color: #eee
   font-family: Tahoma, sans-serif
-  resize: vertical
   height: 35em
-  max-width: 30em
+  resize: vertical
+  max-width: 50em
   min-width: 15em
-  width: 90%
+  width: 50%
 
 .previewer
   display: inline-block
@@ -16,10 +18,26 @@ textarea
   min-height: 30em
   vertical-align: top
   margin-left: 2em
+  max-width: 40em
+  min-width: 15em
+  width: 40%
+  .App-title
+    font-size: 1.5em
+    text-align: center
+  hr
+    border: 0
+    height: 1px
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0)
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0)
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0)
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0)
 
 @media (max-width: 768px)
-  .MarkdownPreviewer
-    margin: 0 5%
-
   textarea
-    height: 20em
+    width: 90%
+
+  .previewer
+    margin: 4em 5% 0 0
+    width: 90%
+    .App-title
+      font-size: 1.25em

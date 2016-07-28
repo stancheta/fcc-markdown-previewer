@@ -4,7 +4,9 @@ import marked from 'marked';
 
 var MarkdownPreviewer = React.createClass({
   getInitialState: function() {
-    return {value: '## Hello World'};
+    return {value: '## Hello World \n' +
+    'Created by [Steven Ancheta](https://steventancheta.com)'
+    };
   },
   handleText: function() {
     this.setState({value: this.refs.textarea.value});
@@ -21,10 +23,13 @@ var MarkdownPreviewer = React.createClass({
           onChange={this.handleText}
           ref="textarea"
           defaultValue={this.state.value}></textarea>
-        <div
-          className="previewer"
-          dangerouslySetInnerHTML={this.previewMarkdown()}
-        >
+        <div className="previewer">
+          <h1 className="App-title">Markdown Previewer</h1>
+          <hr />
+          <div
+            dangerouslySetInnerHTML={this.previewMarkdown()}
+          >
+          </div>
         </div>
       </div>
     );
