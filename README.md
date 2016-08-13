@@ -14,8 +14,7 @@ npm build
 ```
 
 ## Project Description
-This is a Front End Challenge on FreeCodeCamp where I reverse engineer the functionality
-of [this project](https://codepen.io/FreeCodeCamp/full/JXrLLE/).
+FreeCodeCamp has a series of projects with progessively complex [requirements](https://www.freecodecamp.com/challenges/build-a-markdown-previewer). This project is a simple markdown previewer that takes the the contents from a text area and outputs the contents as html on the opposite side. 
 
 ### Requirements
 + **User Story:** I can type GitHub-flavored Markdown into a text area.
