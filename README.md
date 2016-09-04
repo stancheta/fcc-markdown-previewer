@@ -21,9 +21,12 @@ FreeCodeCamp has a series of projects with progessively complex [requirements](h
 + **User Story:** I can see a preview of the output of my markdown that is updated as I type.
 
 ### Used
++ HTML5
++ SASS
++ Javascript
++ React
 + [Create React App](https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html)
 + marked.js
-+ SASS
 
 ### Live Demo:
 http://codepen.io/stancheta/full/RRJQwZ/
