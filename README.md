@@ -17,8 +17,8 @@ npm build
 FreeCodeCamp has a series of projects with progessively complex [requirements](https://www.freecodecamp.com/challenges/build-a-markdown-previewer). This project is a simple markdown previewer that takes the the contents from a text area and outputs the contents as html on the opposite side. 
 
 ### Requirements
-+ **User Story:** I can type GitHub-flavored Markdown into a text area.
-+ **User Story:** I can see a preview of the output of my markdown that is updated as I type.
+1. I can type GitHub-flavored Markdown into a text area.
+2. I can see a preview of the output of my markdown that is updated as I type.
 
 ### Used
 + HTML5
